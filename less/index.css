@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #666;
+  text-decoration: none;
+}
+a:focus {
+  color: #666;
+  text-decoration: none;
+}
+#header {
+  border-bottom: 1px solid #ccc;
+}
+#header .container .row > div {
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  position: relative;
+}
+#header .container .row > div .phone {
+  display: block;
+}
+#header .container .row > div .phone img {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-60px);
+  width: 120px;
+  z-index: 999;
+  display: none;
+}
+#header .container .row > div .phone:hover img {
+  display: block;
+}
+#header .container .row > div ~ div {
+  border-left: 1px solid #ccc;
+}
+#header .container .row .btn-link {
+  color: #666;
+}
+#nav {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 0;
+  z-index: 998;
+}
+#nav .container .navbar-header .navbar-brand {
+  line-height: 50px;
+  height: 80px;
+}
+#nav .container .navbar-header .navbar-brand .icon-icon {
+  color: #e92322;
+  font-size: 28px;
+}
+#nav .container .navbar-header .navbar-brand .icon-logo {
+  color: #333;
+  font-size: 30px;
+}
+#nav .container .navbar-collapse .navbar-nav li a {
+  line-height: 50px;
+}
+#nav .container .navbar-collapse .navbar-nav li a:hover {
+  border-bottom: 2px solid #e92322;
+}
+#nav .container .navbar-collapse .navbar-nav li.active a {
+  background-color: #fff;
+  border-bottom: 2px solid #e92322;
+}
+#slide .carousel-inner .item .large-image {
+  width: 100%;
+  height: 410px;
+  background-position: center center;
+}
+#slide .carousel-inner .item .small-image {
+  width: 100%;
+}
+#feature {
+  padding: 40px 0;
+}
+#feature .container .row > div {
+  margin-bottom: 10px;
+}
+#feature .container .row > div a {
+  display: block;
+}
+#feature .container .row > div a:hover {
+  color: #e92322;
+}
+#booking {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+#booking .text-danger {
+  color: #e92322;
+}
+#booking a:hover {
+  text-decoration: underline;
+}
+#products {
+  padding: 40px 0;
+  background-color: #eee;
+}
+#products .swiper-container {
+  width: 100%;
+}
+#products .swiper-container .swiper-slide {
+  width: auto;
+}
+#products .swiper-container .swiper-slide .nav-tabs {
+  width: auto;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+#products .swiper-container .swiper-slide .nav-tabs li {
+  height: 44px;
+}
+#products .swiper-container .swiper-slide .nav-tabs li a {
+  border: none;
+}
+#products .swiper-container .swiper-slide .nav-tabs li a:hover {
+  background-color: transparent;
+}
+#products .swiper-container .swiper-slide .nav-tabs li.active a {
+  background-color: transparent;
+  border-bottom: 2px solid #e92322;
+}
+#products .tab-content .tab-pane {
+  height: auto;
+}
+#products .tab-content .tab-pane .row {
+  height: auto;
+}
+#products .tab-content .tab-pane .row .col {
+  height: 189px;
+}
+#products .tab-content .tab-pane .row .col .product {
+  height: 169px;
+  margin-top: 20px;
+  display: flex;
+  background-color: #fff;
+  color: #000;
+}
+#products .tab-content .tab-pane .row .col .product.active {
+  background-color: #e92322;
+  color: #fff;
+  position: relative;
+}
+#products .tab-content .tab-pane .row .col .product.active::before {
+  content: "\e915";
+  font-family: itcast;
+  font-size: 30px;
+  position: absolute;
+  top: -6px;
+}
+#products .tab-content .tab-pane .row .col .product .left {
+  flex: 1;
+  padding: 15px;
+}
+#products .tab-content .tab-pane .row .col .product .left .title {
+  text-align: center;
+}
+#products .tab-content .tab-pane .row .col .product .left .content .row div {
+  margin-bottom: 10px;
+}
+#products .tab-content .tab-pane .row .col .product .left .content .row div:nth-child(2n) {
+  text-align: right;
+}
+#products .tab-content .tab-pane .row .col .product .left .content .row div p {
+  margin-bottom: 0;
+}
+#products .tab-content .tab-pane .row .col .product .right {
+  width: 100px;
+  border-left: 1px dashed #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+#products .tab-content .tab-pane .row .col .product .right .tooltips {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  text-align: center;
+}
+#products .tab-content .tab-pane .row .col .product .right .tooltips button:nth-of-type(1) {
+  color: #e92322;
+  border: 1px solid #e92322;
+  background-color: #fff;
+}
+#products .tab-content .tab-pane .row .col .product .right .tooltips button:nth-of-type(2) {
+  color: green;
+  border: 1px solid green;
+  background-color: #fff;
+}
+#products .tab-content .tab-pane .row .col .product .right p {
+  width: 100%;
+  margin-bottom: 0;
+}
+#products .tab-content .tab-pane .row .col .product .right p strong {
+  font-size: 30px;
+}
+#products .tab-content .tab-pane .row .col .product .right::after,
+#products .tab-content .tab-pane .row .col .product .right::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #eee;
+  left: -8px;
+  border-radius: 50%;
+}
+#products .tab-content .tab-pane .row .col .product .right::before {
+  top: -8px;
+}
+#products .tab-content .tab-pane .row .col .product .right::after {
+  bottom: -8px;
+}
+#new {
+  padding: 40px 0;
+}
+#new .row > div h4 {
+  line-height: 40px;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+}
+#new .row > div h4::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+#new .row > div .nav-tabs {
+  border: 0;
+}
+@media (max-width: 992px) {
+  #new .row > div .nav-tabs li {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+}
+#new .row > div .nav-tabs li {
+  margin-bottom: 10px;
+}
+#new .row > div .nav-tabs li.active a {
+  background-color: #e92322;
+}
+#new .row > div .nav-tabs li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+}
+#new .row > div .nav-tabs li a:hover {
+  background-color: transparent;
+  background-color: #e92322;
+  color: #fff;
+}
+#new .row > div .nav-tabs li a i {
+  font-size: 30px;
+}
+#new .row > div .tab-content .tab-pane ul {
+  padding-left: 30px;
+}
+#new .row > div .tab-content .tab-pane ul li {
+  line-height: 40px;
+}
+#footer {
+  padding: 30px 0;
+}
+#footer .container h4 {
+  font-size: 36px;
+}
+#footer .container .row > div .row > div i {
+  font-size: 60px;
+}
+#footer .container .row > div .row > div:hover {
+  color: #e92322;
+}
